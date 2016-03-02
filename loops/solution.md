@@ -120,6 +120,8 @@ time=4, is time <= 3? if this is true add 1, no: 4 > 3, the loops stops now and 
       if(number_of_blocks > 0) {
       
         for(position = 1; position <= number_of_blocks; position++) {
+          console.log(position);
+    
           type = getTypeNumber(position);
           block = getHtmlBlock(position, type);
           body = body + block;      // the same as: body += block
@@ -138,6 +140,8 @@ time=4, is time <= 3? if this is true add 1, no: 4 > 3, the loops stops now and 
       if(is_paragraph_odd) {
         alert("This paragraph is in a odd position!");
       }
+      
+      console.log(is_paragrap_odd);
     }
     
     function init() {
