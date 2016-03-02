@@ -1,4 +1,4 @@
-index.html
+**index.html**
 
 The HTML file will be empty, we only need to import our stylesheet and our javascript file.
 
@@ -15,7 +15,7 @@ You need to call the init() function, which add the generated html to the body, 
       </body>
     </html>
 
-style.css
+**style.css**
 
 Our stylesheet has: body (for everything we have) sets color to white and makes our font everywhere bold/strong. Then our divs will have margins and padding in pixels, always clockwise being: top, right, bottom, left. Each div will have a solid border with size 1px and color of the border black.
 
@@ -40,7 +40,7 @@ Class for odd position will have a background color different from our even posi
       background-color: #6599ff;
     }
 
-app.js
+**app.js**
 
 Our javascript file contains many small functions, so we can use them multiple times. For instance we can check if a number or a position is odd or even with isOdd() function any times we want.
 
@@ -59,16 +59,25 @@ time = 0 is where we want to start.
 time++ is like time = time + 1
 
 This starts at 0, does whatever we tell it to execute inside, then, at the end, it adds 1 to that number so time becomes 1. So we have: time = 0 + 1.
+
 Now time is 1, does again what we want to execute, and adds 1 to time so time becomes 2. We have time = 1 + 1.
+
 Now time is 2, executes the code again and adds 1 to time, time is now 3. We have time = 2 + 1.
+
 etc.
+
+
 
 This will be repeated until our time variable is equal to our times variable.
 
 Lets say we start with time=1 and our times=3.
+
 time=1, is time <= 3? if this is true add 1 to time, yes time = 1 + 1
+
 time=2, is time <= 3? if this is true add 1, yes time = 2 + 1
+
 time=3, is time <= 3? if this is true add 1, yes time = 3 + 1
+
 time=4, is time <= 3? if this is true add 1, no: 4 > 3, the loops stops now and executes what we have after it.
 
 
