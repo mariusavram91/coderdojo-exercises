@@ -65,10 +65,10 @@ app.js
       return block;
     }
     
-    function getHtmlBody() {
+    function getHtmlBody(number_of_blocks) {
       body = "";
       
-      for(position = 1; position <= 5; position++) {
+      for(position = 1; position <= number_of_blocks; position++) {
         type = getTypeNumber(position);
         block = getHtmlBlock(position, type);
         body += content;
@@ -83,6 +83,8 @@ app.js
     }
     
     function init() {
-      body = getHtmlBody();
+      number_of_blocks = 5;
+      body = getHtmlBody(number_of_blocks);
+
       document.body.innerHTML = body;
     }
