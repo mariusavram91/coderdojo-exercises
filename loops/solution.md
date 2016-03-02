@@ -48,6 +48,8 @@ To check if a number is odd or not we can have a conditional which check if the 
 
 To concatenate strings and variables you can do it by using the '+' sign. Lets say the variable I use is: number, we can add the value of that number to a string with: "My number is " + number
 
+---
+
 A for loop repeats an action as many times we tell it to do it. 
 
    for(time = 0; time <= times, time++) {
@@ -66,7 +68,7 @@ Now time is 2, executes the code again and adds 1 to time, time is now 3. We hav
 
 etc.
 
-
+---
 
 This will be repeated until our time variable is equal to our times variable.
 
