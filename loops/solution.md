@@ -15,7 +15,7 @@ style.css
 
     body {
       color: #ffffff;
-      weight: 600;
+      font-weight: 600;
     }
     
     div {
@@ -68,17 +68,21 @@ app.js
     function getHtmlBody(number_of_blocks) {
       body = "";
       
-      for(position = 1; position <= number_of_blocks; position++) {
-        type = getTypeNumber(position);
-        block = getHtmlBlock(position, type);
-        body += content;
+      if(number_of_blocks > 0) {
+      
+        for(position = 1; position <= number_of_blocks; position++) {
+          type = getTypeNumber(position);
+          block = getHtmlBlock(position, type);
+          body += block;
+        }
+    
       }
       
       return body;
     }
     
-    function openCurrentParagraphAllert(position) {
-      paragraph_content = document.getElementById("p-" + position);
+    function openCurrentParagraphAlert(position) {
+      paragraph_content = document.getElementById("p-" + position).innerHTML;
       alert(paragraph_content);
     }
     
